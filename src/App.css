@@ -1,38 +1,730 @@
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 80vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-holder {
+  width: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  z-index: 1;
+  box-shadow: 19px -43px 18px -98px #823cc1, 0px 30px 25px 5px #aab3d2;
+}
+
+.App-inner{
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  width: 35vw;
+  padding: 20px;
+  margin-left: 60px;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+form {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.currency-container{
+  display: flex;
+}
+
+.radio-btn-container{
+  display: flex;
+}
+
+.radio-btn {
+  display: flex;
+  padding: 0 0 10px 10px;
+}
+
+.currency-container {
+  color: antiquewhite;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+}
+
+input {
+  width: 100%;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 2px 2px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  border-radius: 6px;
+}
+
+.h1 {
+  width: 80vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 1.5rem;
+  color: wheat;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3 {
+  color: wheat;
+  padding: 6px; 
+}
+
+.btn-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 100px;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 50px;
+  padding: 12px;
+}
+
+@media only screen and (max-width: 280px) {
+  .App {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-headings {
+    margin-top: 350px;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .img-holder {
+    width: 50%;
+    height: 40%;
+  }
+
+  img{
+    width: 150px;
+    height: 180px;
+    border-radius: 60%;
+    z-index: 1;
+    box-shadow: 19px -43px 18px -80px #823cc1, 0px 30px 25px -5px #aab3d2;
+  }
+
+  .h1 {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 1.1rem;
+    color: wheat;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    color: wheat;
+
+  }
+
+  .below {
+    display: inline-block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .App-inner{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 10px;
+    height: 65vh;
+    border-radius: 10px;
+  }
+  
+  form {
+    width: 90%;
+    height: 120%;
+    padding-left: 6px;
+  }
+
+  input {
+    height: 18px;
+  } 
+
+  .btn-container {
+    width: 60%;
+    position: absolute;
+    top: 136%;
+    left: 60px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 80px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 12px;
+    margin-left: 50px;
+    padding: 10px;
+    margin-bottom: 100px;
   }
 }
+
+@media only screen and (min-width: 281px) and (max-width: 375px) {
+  .App {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App-headings {
+    margin-top: 350px;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .img-holder {
+    width: 50%;
+    height: 40%;
+  }
+
+  img{
+    width: 150px;
+    height: 180px;
+    border-radius: 60%;
+    z-index: 1;
+    box-shadow: 19px -43px 18px -80px #823cc1, 0px 30px 25px -5px #aab3d2;
+  }
+
+  .h1 {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 1.1rem;
+    color: wheat;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    color: wheat;
+
+  }
+
+  .below {
+    display: inline-block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .App-inner{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding: 10px;
+    height: 65vh;
+    border-radius: 10px;
+  }
+  
+  form {
+    width: 90%;
+    height: 120%;
+    padding-left: 10px;
+  }
+
+  input {
+    height: 18px;
+  } 
+
+  .btn-container {
+    width: 60%;
+    position: absolute;
+    top: 128%;
+    left: 80px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 80px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 50px;
+    padding: 12px;
+    margin-bottom: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 414px) {
+  .App {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App-headings {
+    margin-top: 150px;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .img-holder {
+    width: 50%;
+    height: 40%;
+  }
+
+  img{
+    width: 150px;
+    height: 180px;
+    border-radius: 60%;
+    z-index: 1;
+    box-shadow: 19px -43px 18px -80px #823cc1, 0px 30px 25px -5px #aab3d2;
+  }
+
+  .h1 {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 1.1rem;
+    color: wheat;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    color: wheat;
+
+  }
+
+  .below {
+    display: inline-block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .App-inner{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding: 10px;
+    height: 65vh;
+    border-radius: 10px;
+  }
+  
+  form {
+    width: 90%;
+    height: 120%;
+    padding-left: 10px;
+  }
+
+  input {
+    height: 18px;
+  } 
+
+  .btn-container {
+    width: 60%;
+    position: absolute;
+    top: 100%;
+    left: 100px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 80px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 50px;
+    padding: 12px;
+    margin-bottom: 100px;
+  }
+
+}
+
+@media only screen and (min-width:415px) and (max-width: 820px) {
+
+  .App {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App-headings {
+    margin-top: 150px;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .h1 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 2rem;
+    color: wheat;
+    text-align: center;
+  }
+
+  .below {
+    display: inline-block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .App-inner{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 10px;
+    height: 55vh;
+    border-radius: 10px;
+  }
+
+  input {
+    height: 17px;
+  } 
+
+  .btn-container {
+    width: 60%;
+    position: absolute;
+    top: 120%;
+    left: 150px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 80px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 10px;
+    margin-left: 2px;
+    padding: 10px;
+    margin-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width:821px) and (max-width: 912px) {
+
+  .App {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App-headings {
+    margin-top: 150px;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  .h1 {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 2rem;
+    color: wheat;
+    text-align: center;
+  }
+
+  .below {
+    display: inline-block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .App-inner{
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 10px;
+    height: 40vh;
+    border-radius: 10px;
+  }
+
+  input {
+    height: 20px;
+  } 
+
+  .btn-container {
+    width: 60%;
+    position: absolute;
+    top: 100%;
+    left: 150px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 80px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 9px;
+    margin-left: 50px;
+    padding: 12px;
+    margin-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width:913px) and (max-width: 1024px) {
+
+  .App-headings {
+    margin-top: 150px;
+    width: 70vw;
+    height: 100vh;
+  }
+
+  .img-holder {
+    width: 70%;
+    height: 40%;
+    padding-bottom: 40px;
+  }
+  
+  img{
+    width: 280px;
+    height: 280px;
+  }
+
+  .h1 {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 1.2rem;
+    color: wheat;
+    text-align: center;
+  }
+
+  .below {
+    display: none;
+  }
+
+  .arrow {
+    display: inline-block;
+  }
+
+  .App-inner{
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 10px;
+    height: 70vh;
+    border-radius: 10px;
+  }
+
+  input {
+    width: 120%;
+    height: 20px;
+  }
+
+  .btn-container {
+    width: 40%;
+    position: absolute;
+    top: 520px;
+    left: 680px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 90px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 12px;
+    margin-left: 50px;
+    padding: 12px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1279px){
+
+  .App-headings {
+    margin-top: 80px;
+    width: 55vw;
+    height: 80vh;
+  }
+
+  .img-holder {
+    width: 70%;
+    height: 40%;
+    padding-bottom: 40px;
+  }
+  
+  img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .h1 {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 1.5rem;
+    color: wheat;
+    text-align: center;
+  }
+
+  .below {
+    display: none;
+  }
+
+  .arrow {
+    display: inline-block;
+  }
+
+  .App-inner{
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 8px;
+    margin: 6px;
+    height: 60vh;
+    border-radius: 10px;
+  }
+
+  input {
+    width: 90%;
+    height: 20px;
+  }
+
+  .btn-container {
+    width: 30%;
+    position: absolute;
+    top: 480px;
+    left: 840px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 90px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 12px;
+    margin-left: 50px;
+    padding: 12px;
+  }
+}
+
