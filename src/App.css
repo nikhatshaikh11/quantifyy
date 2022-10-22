@@ -771,3 +771,84 @@ h3 {
   }
 }
 
+@media only screen and (min-width:1280px) {
+
+  .App-headings {
+    margin-top: 80px;
+    width: 55vw;
+    height: 80vh;
+  }
+
+  .img-holder {
+    width: 70%;
+    height: 40%;
+    padding-bottom: 40px;
+  }
+  
+  img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .h1 {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  h1 {
+    font-size: 1.5rem;
+    color: wheat;
+    text-align: center;
+  }
+
+  .below {
+    display: none;
+  }
+
+  .arrow {
+    display: inline-block;
+  }
+
+  .App-inner{
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 8px;
+    margin: 6px;
+    height: 40vh;
+    border-radius: 10px;
+  }
+
+  input {
+    width: 90%;
+    height: 20px;
+  }
+
+  .btn-container {
+    margin-top: 10px;
+    width: 30%;
+    position: relative;
+    bottom: 0;
+    left: 100px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    width: 90px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 3px 3px 0 0,#000 3px 3px 0 1px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 12px;
+    margin-left: 50px;
+    padding: 12px;
+  }
+}
+
