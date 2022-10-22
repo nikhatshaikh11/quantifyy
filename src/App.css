@@ -496,7 +496,7 @@ h3 {
     flex-direction: column;
     width: 70vw;
     padding: 10px;
-    height: 55vh;
+    height: 50vh;
     border-radius: 10px;
   }
 
@@ -656,7 +656,7 @@ h3 {
     flex-direction: column;
     width: 70vw;
     padding: 10px;
-    height: 70vh;
+    height: 50vh;
     border-radius: 10px;
   }
 
@@ -738,7 +738,7 @@ h3 {
     width: 30vw;
     padding: 8px;
     margin: 6px;
-    height: 60vh;
+    height: 40vh;
     border-radius: 10px;
   }
 
