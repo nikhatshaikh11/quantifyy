@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from "react";
 import Popup from "./Popup.js";
+import Footer from './Footer';
 
 function App() {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -16,65 +17,68 @@ function App() {
 
 
   return (
+    <>
     <div className="App">
       <div className='App-headings'>
+        <div className='logo'>Quantifyy</div>
         <div className='img-holder'>
           <img src="https://cdn.pixabay.com/photo/2015/09/09/17/19/light-bulb-931979_960_720.jpg" />
         </div>
-        <div className='h1'><h1>Know the cost of eradicating homelessness from you city!</h1></div>
+        <div className='h1'><h1>Quantify the cost of eradicating homelessness from you city!</h1></div>
         <h3>Enter the details <span className='display-change arrow'> →</span> <span className='display-change below'> below</span></h3>
       </div>
       <div className='App-inner'>
-        <form>
-          <div className='currency-container'>
-            Currency:
-            <div className='radio-btn-container'>
-              <div className='radio-btn' onClick={() => {
-                setCurrency("INR");
-              }}>
-                <input type={'radio'} id='rupee' name='currency' value={currency} checked={currency === "INR"}/>
-                INR
-              </div>
-              <div className='radio-btn' onClick={() => {
-                setCurrency("USD");
-              }}>
-                <input type={'radio'} id='usd' name='currency' value={currency} checked={currency === "USD"}/> 
-                USD
+        <div className='form-container'>
+          <form>
+            <div className='currency-container'>
+              Currency:
+              <div className='radio-btn-container'>
+                <div className='radio-btn' onClick={() => {
+                  setCurrency("INR");
+                }}>
+                  <input type={'radio'} id='rupee' name='currency' value={currency} checked={currency === "INR"}/>
+                  INR
+                </div>
+                <div className='radio-btn' onClick={() => {
+                  setCurrency("USD");
+                }}>
+                  <input type={'radio'} id='usd' name='currency' value={currency} checked={currency === "USD"}/> 
+                  USD
+                </div>
               </div>
             </div>
-          </div>
-          <label>
-            City:
-            <input id='city' value={city} onChange={ (event) => {
-              setCity(event.target.value);
-            }}/>
-          </label>
-          <label>
-            Total city population (in millions):
-            <input type={'number'} id='population'value={population} onChange={ (event) => {
-              setPopulation(event.target.value);
-            }}/>
-          </label>
-          <label>
-            Percentage of Homeless people:
-            <input type={'number'} id='percentage' value={percentage} onChange={ (event) => {
-              setPercentage(event.target.value);
-            }}/>
-          </label>
-          <label>
-            {`Cost to build one home (in ${currency}): `}
-            <input id='oneHomeCost' value={oneHomeCost} onChange={ (event) => {
-              setOneHomeCost(event.target.value);
-            }}/>
-          </label>
-          <label>
-            {`Members in a family (on an average) :`}
-            <input type={'number'} id='familySize' value={familySize} onChange={ (event) => {
-              setFamilySize(event.target.value);
-            }}/>
-          </label>
-        </form>
-        <br></br>
+            <label>
+              City:
+              <input id='city' value={city} onChange={ (event) => {
+                setCity(event.target.value);
+              }}/>
+            </label>
+            <label>
+              Total city population (in millions):
+              <input type={'number'} id='population'value={population} onChange={ (event) => {
+                setPopulation(event.target.value);
+              }}/>
+            </label>
+            <label>
+              Percentage of Homeless people:
+              <input type={'number'} id='percentage' value={percentage} onChange={ (event) => {
+                setPercentage(event.target.value);
+              }}/>
+            </label>
+            <label>
+              {`Cost to build one home (in ${currency}): `}
+              <input id='oneHomeCost' value={oneHomeCost} onChange={ (event) => {
+                setOneHomeCost(event.target.value);
+              }}/>
+            </label>
+            <label>
+              {`Members in a family (on an average) :`}
+              <input type={'number'} id='familySize' value={familySize} onChange={ (event) => {
+                setFamilySize(event.target.value);
+              }}/>
+            </label>
+          </form>
+        </div>
         <div className='btn-container'>
           <button
             className='btn btn-calculate'
@@ -121,6 +125,7 @@ function App() {
         ></Popup>
       </div>
     </div>
+    </>
   );
 }
 

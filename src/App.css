@@ -9,6 +9,15 @@
   background-color: black;
 }
 
+.logo {
+  font-weight: 700;
+  padding: 20px;
+  color: #823cc1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .App-headings {
   display: flex;
   flex-direction: column;
@@ -45,9 +54,16 @@ img{
   margin-left: 60px;
   height: 60vh;
   border-radius: 10px;
+  position: relative;
+}
+
+.form-container {
+  /* display: flex; */
+  height: auto;
 }
 
 form {
+  /* position: absolute; */
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -105,9 +121,12 @@ h3 {
 }
 
 .btn-container {
-  width: 90%;
+  margin-top: 10px;
+  width: 60%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  bottom: 1;
 }
 
 .btn {
@@ -119,9 +138,6 @@ h3 {
   color: #fff;
   cursor: pointer;
   font-size: 14px;
-  line-height: 20px;
-  margin-left: 50px;
-  padding: 12px;
 }
 
 @media only screen and (max-width: 280px) {
@@ -187,6 +203,11 @@ h3 {
     height: 65vh;
     border-radius: 10px;
   }
+
+  .form-container {
+    /* display: flex; */
+    height: auto;
+  }
   
   form {
     width: 90%;
@@ -199,10 +220,11 @@ h3 {
   } 
 
   .btn-container {
+    margin-top: 10px;
     width: 60%;
-    position: absolute;
-    top: 136%;
-    left: 60px;
+    position: relative;
+    bottom: 0;
+    left: 100px;
     justify-content: space-around;
   }
 
@@ -218,7 +240,7 @@ h3 {
     line-height: 12px;
     margin-left: 50px;
     padding: 10px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 }
 
@@ -285,6 +307,11 @@ h3 {
     height: 65vh;
     border-radius: 10px;
   }
+
+  .form-container {
+    /* display: flex; */
+    height: auto;
+  }
   
   form {
     width: 90%;
@@ -297,10 +324,11 @@ h3 {
   } 
 
   .btn-container {
+    margin-top: 10px;
     width: 60%;
-    position: absolute;
-    top: 128%;
-    left: 80px;
+    position: relative;
+    bottom: 0;
+    left: 100px;
     justify-content: space-around;
   }
 
@@ -316,7 +344,7 @@ h3 {
     line-height: 14px;
     margin-left: 50px;
     padding: 12px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
 }
@@ -385,6 +413,11 @@ h3 {
     border-radius: 10px;
   }
   
+  .form-container {
+    /* display: flex; */
+    height: auto;
+  }
+
   form {
     width: 90%;
     height: 120%;
@@ -396,9 +429,10 @@ h3 {
   } 
 
   .btn-container {
+    margin-top: 10px;
     width: 60%;
-    position: absolute;
-    top: 100%;
+    position: relative;
+    bottom: 0;
     left: 100px;
     justify-content: space-around;
   }
@@ -415,7 +449,7 @@ h3 {
     line-height: 14px;
     margin-left: 50px;
     padding: 12px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
 }
@@ -466,15 +500,21 @@ h3 {
     border-radius: 10px;
   }
 
+  .form-container {
+    /* display: flex; */
+    height: auto;
+  }
+
   input {
     height: 17px;
   } 
 
   .btn-container {
+    margin-top: 10px;
     width: 60%;
-    position: absolute;
-    top: 120%;
-    left: 150px;
+    position: relative;
+    bottom: 0;
+    left: 100px;
     justify-content: space-around;
   }
 
@@ -490,7 +530,7 @@ h3 {
     line-height: 10px;
     margin-left: 2px;
     padding: 10px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 }
 
@@ -545,10 +585,11 @@ h3 {
   } 
 
   .btn-container {
+    margin-top: 10px;
     width: 60%;
-    position: absolute;
-    top: 100%;
-    left: 150px;
+    position: relative;
+    bottom: 0;
+    left: 100px;
     justify-content: space-around;
   }
 
@@ -564,7 +605,7 @@ h3 {
     line-height: 9px;
     margin-left: 50px;
     padding: 12px;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
   }
 }
 
@@ -625,10 +666,11 @@ h3 {
   }
 
   .btn-container {
+    margin-top: 10px;
     width: 40%;
-    position: absolute;
-    top: 520px;
-    left: 680px;
+    position: relative;
+    bottom: 0;
+    left: 100px;
     justify-content: space-around;
   }
 
@@ -644,7 +686,7 @@ h3 {
     line-height: 12px;
     margin-left: 50px;
     padding: 12px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 }
 
@@ -706,10 +748,11 @@ h3 {
   }
 
   .btn-container {
+    margin-top: 10px;
     width: 30%;
-    position: absolute;
-    top: 480px;
-    left: 840px;
+    position: relative;
+    bottom: 0;
+    left: 100px;
     justify-content: space-around;
   }
 

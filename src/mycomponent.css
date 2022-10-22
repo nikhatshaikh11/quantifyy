@@ -12,10 +12,6 @@
     padding: 40px;
 }
 
-.img-text-container {
-    
-}
-
 .share-cause {
     text-align: center;
     font-weight: 500;
@@ -31,6 +27,7 @@
 }
 
 #save-btn {
+    display: none;
     margin-top: 10px;
     width: 100px;
     background-color: #000;
