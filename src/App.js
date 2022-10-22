@@ -25,7 +25,7 @@ function App() {
           <img src="https://cdn.pixabay.com/photo/2015/09/09/17/19/light-bulb-931979_960_720.jpg" />
         </div>
         <div className='h1'><h1>Quantify the cost of eradicating homelessness from you city!</h1></div>
-        <h3>Enter the details <span className='display-change arrow'> →</span> <span className='display-change below'> below</span></h3>
+        <h3>Enter the details here</h3>
       </div>
       <div className='App-inner'>
         <div className='form-container'>
